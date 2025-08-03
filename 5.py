@@ -1,11 +1,14 @@
-# WAP to calculate selling price of book based on cost price and discount.
+side1=float(input("enter angle 1= "))
+side2=float(input("enter angle 2= "))
+side3=float(input("enter angle 3= "))
 
-c_p=int(input("enter cost price="))
-d_p=int(input("enter discount price = "))
+# side4=side1+side2+side3
 
-s_p = c_p + d_p
-
-s_p =s_p-d_p
-
-s_p = s_p + d_p
-print(f'selling price={s_p}')
+if(side1== side2 == side3):
+    print("equilatoral tringle")
+elif( side1 == side2):
+    print("isosceles tringle")
+elif( side1 != side2 !=side3):
+    print("tringle is scalene")
+# else:
+#     print("invalid tringle")

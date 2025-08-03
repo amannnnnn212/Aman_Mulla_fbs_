@@ -1,21 +1,12 @@
-# 10. Write a program to reverse three-digit number.
+ # 10. Write a program to check if person is eligible to marry or not (male age >=21 and female age>=18)
 
-val1=int(input("enter three digit number="))
+age=float(input(" enter age = "))
+gender=(input("enter gender (M/F) = "))
 
-temp=val1
 
-f_d=temp % 10
-
-temp= temp // 10
-
-s_d= temp % 10
-temp = temp // 10
-
-t_d= temp % 10
-temp= temp //10
-
-print(f'first digit ={t_d} second digit ={s_d} third digit={f_d}')
-
-print("reverse number is ")
-
-print(f'reverse numers ={f_d}{s_d}{t_d}')
+if((age >=21 and gender=='male') or ( age >=18 and gender =='female')):
+    print("eligible for marriage")
+elif((age <21 and gender=='male') or ( age <18 and gender =='female')):
+    print("not eligible for marriage")
+else:
+    print("Invalid key ")

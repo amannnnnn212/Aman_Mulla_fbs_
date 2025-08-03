@@ -1,8 +1,10 @@
-# 2. Convert temp from Celsius to Fahrenheit. (C/5 = (F-32)/9)
+# 2. Write a program to input any alphabet and check whether it is vowel or consonant.
+ 
+a=input("enter alfabet=")
 
-celsius=int(input("enter tempreture in celsius ="))
-
-# tempreture= fahrenheit-32*5/9
-tempreture=celsius * 9/5 +32
-
-print(f'fahrenhit tempreture={tempreture}')
+if( a in "a,e,i,o,u"):
+    print(f'{a}  it is vowel ')
+elif(a in "A,E,I,O,U"):
+    print(f'{a} it is vowel')
+else:
+    print("constant character")

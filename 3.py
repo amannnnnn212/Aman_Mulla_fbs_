@@ -1,10 +1,11 @@
-# 3. Convert distant given in feet and inches into meter and centimeter.
+# 3. Write a program to input angles of a triangle and check whether triangle is valid or not.
 
-feet=int(input("enter feet ="))
-inch=int(input("enter inches ="))
+a1=float(input("enter angle 1= "))
+a2=float(input("enter angle 2="))
+a3=float(input("enter angle 3="))
 
-meter= feet/3.281
-centimeter= inch*2.54
-
-print(f'the feet and inches into meter and centimeter\nmeter= {meter} \ncentimeter={centimeter}')
-
+t=a1+a2+a3 
+if( t == 180):
+    print(f'  trangle is valid ')
+else:
+    print("tringle is invalid")

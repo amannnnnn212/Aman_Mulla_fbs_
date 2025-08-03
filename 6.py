@@ -1,14 +1,20 @@
-# # WAP to calculate total salary of employee based on basic, da=10% of basic,
-# ta=12% of basic, hra=15% of basic.
+# Write a program to calculate profit or loss.
 
+c_p=float(input("enter cost price="))
+# d_p=float(input("enter discount price = "))
 
-salary=int(input("enter salary= "))
+s_p=float(input("enter selling price= "))
+# d_p = c_p * d_p /100
 
-da=salary*10/100
-ta=salary/100*12
-hra=salary/100*15
+total_cp= c_p 
 
+# temp = d_p /100 * d_p 
 
-total_salary=salary-da-ta-hra
+# s_p = total_cp + d_p
+print(f'cost price ={c_p}')
+print(f'selling price={s_p}')
 
-print(f'basic salary= {total_salary}')
+if(s_p> c_p):
+    print("profit")
+else:
+    print(" loss")

@@ -1,24 +1,8 @@
-# WAP to calculate area of triangle and rectangle
+side1=float(input("enter side 1= "))
+side2=float(input("enter side 2= "))
+side3=float(input("enter side 3= "))
 
-# area of rectangle 
-print("area of rectangle")
-
-lenght=int(input("enter lenght="))
-
-width=int(input("enter width ="))
-
-rectangle= lenght*width
-
-print(f'area of rectangle is={rectangle}')
-
-# area of tringle
-
-print("area of triangle")
-
-base=int(input("enter base (cm)="))
-
-height=int(input("enter height(cm)="))
-
-Area = 1/2 * base * height 
-
-print(f'area of triangle={Area}cm')
+if(side1+side2>side3 and side3+side2>side1 and side1+side3>side2):
+    print("tringle is valid")
+else:
+    print("tringle is invalid")

@@ -1,12 +1,38 @@
-# 9. Write a program to swap two numbers without using third variable.
+# 9. Input 5 subject marks from user and display grade(eg.First class,Second class ..)
+
+marathi=float(input("enter marathi marks : "))
+hindi=float(input("enter hindi marks : "))
+english=float(input(" enter english marks : "))
+c_science=float(input("inter computer science marks : "))
+java=float(input("enter java marks : "))
 
 
-num1=int(input("enter first number="))
-num2=int(input("enter second number="))
+total_marks= hindi+english+c_science+java+marathi
 
-num2=num1+num2
+percentage= total_marks /500 * 100
+print(f'total percentage={percentage}')
 
-num1=num2-num1
-num2=num2-num1
+if( marathi < 35):
+    print(" fail in marathi and ")
+    if(hindi < 35):
+        print("fail in hindi and")
+        if(english< 35):
+            print("fail in english and")
+            if(c_science < 35):
+                print("fail in computer science and")
+                if(java < 35):
+                    print(" fail in java and")
 
-print(f'number 1={num1} number 2={num2}')
+
+if(percentage >= 75 and percentage <=100):
+    print("Pass With Distinction")
+elif(percentage >= 60 and percentage <75 ):
+    print("Pass With First Class")
+elif( percentage >=50 and percentage< 60):
+    print("Pass With Second Class")
+elif( percentage >=40 and percentage <50):
+    print("Pass With Third Class")
+elif(percentage >=35 and percentage<40):
+    print(" pass ")
+else:
+    print(" fail") 
